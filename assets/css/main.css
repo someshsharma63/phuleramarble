@@ -189,6 +189,8 @@ h6 {
 @media (max-width: 1200px) {
   .header {
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .header .header-container {
