@@ -2357,7 +2357,7 @@ h6 {
 }
 
 .travel-about .hero-image {
-  width: 400px;
+  /* width: 400px; */
   border-radius: 20px;
   overflow: hidden;
 }

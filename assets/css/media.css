@@ -2,7 +2,21 @@
 
     #contact
     {
-        padding: unset;
+        padding: 1rem;
     }
-    
+    #about
+     {
+        padding: 1rem;
+    }
+    #ourmission
+    {
+        padding: 1rem;
+    }
+    #faqconte
+    {
+     padding: 1rem;
+    }
+    #blog-posts {
+    padding: 1rem;
+}
 }
