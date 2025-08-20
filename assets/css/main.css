@@ -2889,7 +2889,7 @@ h6 {
 
 .travel-destinations .isotope-container .destination-tile .tile-image .overlay-content {
   position: absolute;
-  top: 0;
+  top: 250px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -8471,12 +8471,7 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
 
 /* somesh css */
 
@@ -8624,4 +8619,8 @@ i.mobile-nav-toggle.d-xl-none.bi.bi-list {
     padding-top: 20px;
     font-size: 30px;
     font-weight: 400;
+}
+#granitecontent
+{
+  padding: 3rem;
 }
