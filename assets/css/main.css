@@ -165,9 +165,8 @@ h6 {
   transition: 0.3s;
 }
 .logo{
-  width: 100px;
-  /* height: 70px; */
-
+    width: 140px;
+    height: 100px;
 }
 
 .logo img
@@ -242,7 +241,7 @@ h6 {
   .navmenu a:focus {
     color:#000;
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--nav-font);
     font-weight: 500;
     display: flex;
@@ -780,7 +779,7 @@ h6 {
 .section-title div {
   color: var(--heading-color);
   margin: 10px 0 0 0;
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 700;
   font-family: var(--heading-font);
 }
@@ -1052,7 +1051,7 @@ h6 {
 }
 
 .why-us .why-choose-section h3 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.3;
@@ -1075,7 +1074,7 @@ h6 {
 }
 
 .why-us .feature-card {
-  background: var(--surface-color);
+  background:#1c4b56;
   padding: 2.5rem 1.5rem;
   border-radius: 15px;
   text-align: center;
@@ -1091,9 +1090,10 @@ h6 {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.why-us .feature-card:hover .feature-icon {
-  background: #b99563;
+.why-us .feature-card .feature-icon {
+
   color: var(--contrast-color);
+      background: #b99563;
 }
 
 .why-us .feature-icon {
@@ -1114,12 +1114,13 @@ h6 {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .why-us .feature-card p {
   font-size: 1rem;
+   color: #ffffff;
   line-height: 1.6;
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin-bottom: 0;
 }
 
@@ -1364,7 +1365,7 @@ h6 {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .featured-destinations .compact-destination .destination-details h4 {
@@ -8496,15 +8497,20 @@ h6 {
       position: absolute;
     right: 0;
     bottom: 10rem;
-    left: 9% !important;
+    /* left: 30% !important; */
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     color: var(--bs-carousel-caption-color);
     text-align: left;
 }
+.carousel-caption h5
+{
+  font-size: 5rem;
+  text-align: left;
+}
 .myslider h1
 {
-  font-size: 70px;
+  font-size: 60px;
   color: #fff;
 }
 .sliderbtn a
@@ -8525,7 +8531,7 @@ h6 {
 }
 #aboutusp h3
 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.3;
@@ -8624,4 +8630,59 @@ i.mobile-nav-toggle.d-xl-none.bi.bi-list {
 #granitecontent
 {
   padding: 3rem;
+}
+.sliderimages {
+  position: relative;
+}
+
+.sliderimages::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* transparent black */
+  z-index: 1;
+}
+.sliderimages img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel-caption {
+  position: absolute;
+  z-index: 2; /* ensures text is above overlay */
+}
+.contactusbtn a
+{
+  background-color: #cba775;
+  font-size: 18px;
+  color: #000;
+  border: none;
+  padding: 1rem 3rem;
+}
+
+.whatsapp_float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp_float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp_float img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1); /* makes the icon white */
 }
