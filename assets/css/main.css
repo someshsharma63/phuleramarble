@@ -8610,7 +8610,7 @@ i.mobile-nav-toggle.d-xl-none.bi.bi-list {
 {
   background-color: #f4f4f4;
   padding: 3rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 .ourvisioncontent h3 {
     font-size: 32px;
@@ -8685,4 +8685,14 @@ i.mobile-nav-toggle.d-xl-none.bi.bi-list {
   width: 35px;
   height: 35px;
   filter: brightness(0) invert(1); /* makes the icon white */
+}
+.ourvisionimage
+{
+  width: 500px;
+  height: 350px;
+}
+.ourvisionimage img
+{
+  width: 100%;
+  height: 100%;
 }
