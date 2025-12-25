@@ -8879,14 +8879,16 @@ padding: 6px 6px 0 6px;
 
   box-shadow: 2px 4px 10px rgba(0,0,0,0.25);
 }
-
 .whatsapp_float img {
   width: 18px;   /* icon chhota */
   height: 18px;
   filter: invert(1);
 }
 
-
+.glightbox-clean .gdesc-inner
+{
+  display: none !important;
+}
 
 
 
