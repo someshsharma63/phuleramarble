@@ -8832,6 +8832,7 @@ section#manufacture_process {
 .content li
 {
   list-style: none;
+  white-space: nowrap;
 }
 .content span
 {
@@ -8889,4 +8890,5 @@ padding: 6px 6px 0 6px;
 {
   display: none !important;
 }
+
 
