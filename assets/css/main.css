@@ -454,7 +454,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.697),rgba(0, 0, 0, 0.686)),url("../img/blog/marble.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.697),rgba(0, 0, 0, 0.686)),url("../img/blog/marble.webp");
   font-size: 14px;
   position: relative;
 }
