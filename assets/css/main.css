@@ -57,6 +57,7 @@ body {
    font-family: "Poppins";
     overflow-x: hidden;
     /* display: none; */
+    display: none;
 }
 
 a {
