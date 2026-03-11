@@ -56,10 +56,8 @@ body {
   background-color: var(--background-color);
    font-family: "Poppins";
     overflow-x: hidden;
-    /* display: none; */
-    display: none;
-}
 
+}
 a {
   color: var(--accent-color);
   text-decoration: none;
