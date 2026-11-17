@@ -8899,3 +8899,5 @@ padding: 6px 6px 0 6px;
   color: black !important;
 }
 
+.sliderimages { pointer-events: none; }
+.carousel-control-prev, .carousel-control-next { z-index: 10; pointer-events: auto; }

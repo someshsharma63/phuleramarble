@@ -40,7 +40,6 @@
 
 </a>
 
-
 <header id="header" class="header d-flex align-items-center fixed-top">
   <div class="header-container container position-relative d-flex align-items-center justify-content-between">
 
@@ -144,65 +143,109 @@
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.34258768127!2d74.8709632!3d26.605463500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396bf12a2c33e241%3A0x72e7df985a18276e!2sPhulera%20Marbles%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1754132942919!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div class="container form-container-overlap">
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-lg-10">
-            <div class="contact-form-wrapper">
-              <h2 class="text-center mb-4">Get in Touch</h2>
+     
+<div class="container form-container-overlap">
+  <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+    <div class="col-lg-10">
+      <div class="contact-form-wrapper">
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-person"></i>
-                        <input type="text" class="form-control" name="name" placeholder="First Name" required="">
-                      </div>
-                    </div>
-                  </div>
+        <h2 class="text-center mb-4">Get in Touch</h2>
 
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-envelope"></i>
-                        <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
-                      </div>
-                    </div>
-                  </div>
+        <form id="contact-form">
+          <div class="row g-3">
 
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-text-left"></i>
-                        <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-group">
-                      <div class="input-with-icon">
-                        <i class="bi bi-chat-dots message-icon"></i>
-                        <textarea class="form-control" name="message" placeholder="Write Message..." style="height: 180px" required=""></textarea>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
-                  </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-with-icon">
+                  <i class="bi bi-person"></i>
+                  <input type="text" class="form-control" name="name"
+                    placeholder="First Name" required>
                 </div>
-              </form>
+              </div>
             </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-with-icon">
+                  <i class="bi bi-envelope"></i>
+                  <input type="email" class="form-control" name="email"
+                    placeholder="Email Address" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="input-with-icon">
+                  <i class="bi bi-text-left"></i>
+                  <input type="text" class="form-control" name="subject"
+                    placeholder="Subject" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <div class="input-with-icon">
+                  <i class="bi bi-chat-dots message-icon"></i>
+                  <textarea class="form-control" name="message"
+                    placeholder="Write Message..."
+                    style="height: 180px" required></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="error-message"></div>
+              <div class="sent-message">
+                WhatsApp is opening. Please send your message!
+              </div>
+            </div>
+
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-primary btn-submit">
+                SEND MESSAGE
+              </button>
+            </div>
+
           </div>
-        </div>
+        </form>
+
       </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  const name = document.querySelector('[name="name"]').value.trim();
+  const email = document.querySelector('[name="email"]').value.trim();
+  const subject = document.querySelector('[name="subject"]').value.trim();
+  const message = document.querySelector('[name="message"]').value.trim();
+
+  const phone = "919414010987";
+
+  const whatsappMessage = 
+`New Website Enquiry
+
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}`;
+
+  const whatsappURL = 
+    "https://wa.me/" + phone + "?text=" + encodeURIComponent(whatsappMessage);
+
+  window.open(whatsappURL, "_blank");
+
+});
+</script>
+
     </section>
   </main>
 
@@ -257,7 +300,7 @@
     <div class="container copyright text-center mt-4">
     <p>© <span>Copyright</span> <strong class="px-1 sitename">Phulera Marbles Pvt Ltd</strong> <span>All Rights Reserved</span></p>
      <div class="credits">
-        Designed by <a href="tel:9024881021">Somesh:9024881021</a>
+        Designed by <a href="tel:9024881021">Somesh</a>
       </div>
     </div>
   </footer>
